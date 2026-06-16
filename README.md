@@ -1,2 +1,2 @@
 # Report-Card
-A suite of Edge AI tools that catch a school's hidden water, energy, and food waste, all of which are visualized in Report Card, a dashboard that grades its sustainability.
+Aqualert AI is an acoustic edge-AI device that listens to school plumbing and detects leaks in toilets, sinks, showers, and pipes before they burst, cutting wasted water and surprise bills. A binary audio classifier runs on a Raspberry Pi Zero with a sound sensor, instantly alerting staff to leaks.
