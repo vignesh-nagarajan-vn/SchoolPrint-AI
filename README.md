@@ -1,8 +1,8 @@
-# SchoolPrint
+# SchoolPrint AI
 
 ## About
 
-This repo is the SchoolPrint project, the umbrella for the SchoolPulse concept built for USAII Global AI Hackathon 2026, High School Challenge 2, Direction B: My School's Hidden Footprint.
+This repo is the SchoolPrint AI project, the umbrella for the SchoolPulse concept built for USAII Global AI Hackathon 2026, High School Challenge 2, Direction B: My School's Hidden Footprint.
 
 See `context/README.md` for the project brief, Google Doc synthesis, email summary, and challenge notes.
 
