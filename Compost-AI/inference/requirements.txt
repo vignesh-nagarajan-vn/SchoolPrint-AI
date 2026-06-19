@@ -1,0 +1,10 @@
+# Compost-AI inference Space dependencies.
+# tensorflow-cpu keeps the image small (no CUDA) — EfficientNetB0 + Grad-CAM on
+# CPU is well under a second when the Space is warm.
+tensorflow-cpu==2.16.1
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.7.4
+pillow==10.4.0
+numpy==1.26.4
+opencv-python-headless==4.10.0.84

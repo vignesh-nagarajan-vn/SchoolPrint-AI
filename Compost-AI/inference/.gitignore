@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+correction_memory.json
+gradcam_out.png
+# Track the model with Git LFS when pushing to the Space; ignore stray copies:
+*.keras
+!efficientnet-b0-weights.keras
