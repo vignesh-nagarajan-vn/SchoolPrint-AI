@@ -1,7 +1,7 @@
 {
   "name": "pulse-agent-ai",
   "version": "1.0.0",
-  "description": "Pulse Agent AI is Ishaan's SchoolPrint AI backend layer for the USAII Global AI Hackathon 2026. It connects the water, compost/waste, energy, event, and transportation pieces into one school operations assistant.",
+  "description": "Pulse Agent AI is Ishaan's SchoolPulse AI backend layer for the USAII Global AI Hackathon 2026. It connects the water, compost/waste, energy, event, and transportation pieces into one school operations assistant.",
   "directories": {
     "doc": "docs"
   },

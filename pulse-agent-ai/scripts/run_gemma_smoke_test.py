@@ -159,7 +159,7 @@ def main() -> None:
                 {"role": "system", "content": "You are a concise school sustainability assistant."},
                 {
                     "role": "user",
-                    "content": "In one sentence, explain what SchoolPrint AI should do before a volleyball game to reduce energy waste.",
+                    "content": "In one sentence, explain what SchoolPulse AI should do before a volleyball game to reduce energy waste.",
                 },
             ],
             max_tokens=120,

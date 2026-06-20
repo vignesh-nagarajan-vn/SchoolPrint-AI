@@ -1,5 +1,5 @@
 ## Summary
-Compost AI is an AI-Powered Smart Bin designed to reduce food waste in school cafeterias. It is a component of **SchoolPrint**, which is a suite of edge AI toolds design to help reduce a school's environmental footprint. This directory contains the dataset, code, results, model weights, inference and web application of the Compost AI waste classification model/smartbin.
+Compost AI is an AI-Powered Smart Bin designed to reduce food waste in school cafeterias. It is a component of **SchoolPulse AI**, which is a suite of edge AI toolds design to help reduce a school's environmental footprint. This directory contains the dataset, code, results, model weights, inference and web application of the Compost AI waste classification model/smartbin.
 
 ### Problem
 ***[One-third of all food in the United States goes uneaten](https://www.epa.gov/recycle/preventing-wasted-food-home)*** and ends up in our municipal solid waste stream. Fortunately, composting can solve this. Composting is a process of naturally recycling food scraps so that they can be used to create more nutrient rich soil. However, ***[96% of wasted food ended up in landfills](https://www.epa.gov/recycle/preventing-wasted-food-home)*** instead of being composted. This is for 2 reasons:

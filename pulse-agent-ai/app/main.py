@@ -19,7 +19,7 @@ from .water_live import WaterLiveService
 
 app = FastAPI(
     title="Pulse Agent AI",
-    description="SchoolPrint AI backend for RAG, recommendations, energy/event intelligence, and voice-agent responses.",
+    description="SchoolPulse AI backend for RAG, recommendations, energy/event intelligence, and voice-agent responses.",
     version="0.1.0",
 )
 app.add_middleware(

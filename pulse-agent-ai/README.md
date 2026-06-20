@@ -1,6 +1,6 @@
 # Pulse Agent AI
 
-Pulse Agent AI is Ishaan's SchoolPrint AI backend layer for the USAII Global AI Hackathon 2026. It connects the water, compost/waste, energy, event, and transportation pieces into one school operations assistant.
+Pulse Agent AI is Ishaan's SchoolPulse AI backend layer for the USAII Global AI Hackathon 2026. It connects the water, compost/waste, energy, event, and transportation pieces into one school operations assistant.
 
 The dashboard can stay simple. This folder is the backend brain:
 

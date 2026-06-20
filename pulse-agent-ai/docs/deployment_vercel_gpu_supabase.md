@@ -23,7 +23,7 @@ If the A100 is restarted or the tunnel process stops, start a new tunnel and upd
 Tunnel restart command on the A100:
 
 ```bash
-cd ~/SchoolPrint-AI/pulse-agent-ai
+cd ~/SchoolPulse AI-AI/pulse-agent-ai
 bash scripts/start_api_tunnel.sh
 ```
 
@@ -54,8 +54,8 @@ vercel --prod
 Clone or pull the repo on the GPU:
 
 ```bash
-git clone https://github.com/vignesh-nagarajan-vn/SchoolPrint-AI.git
-cd SchoolPrint-AI/pulse-agent-ai
+git clone https://github.com/vignesh-nagarajan-vn/SchoolPulse AI-AI.git
+cd SchoolPulse AI-AI/pulse-agent-ai
 git pull
 ```
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**SchoolPrint AI** is the umbrella repo for **SchoolPulse**, an entry for USAII Global AI Hackathon 2026, High School Challenge 2 (Direction B: My School's Hidden Footprint). It is a suite of three independent edge AI modules unified by a web dashboard.
+**SchoolPulse AI** is the umbrella repo for **SchoolPulse**, an entry for USAII Global AI Hackathon 2026, High School Challenge 2 (Direction B: My School's Hidden Footprint). It is a suite of three independent edge AI modules unified by a web dashboard.
 
 ## Modules
 

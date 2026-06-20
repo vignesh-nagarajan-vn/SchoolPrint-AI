@@ -11,7 +11,7 @@ The repository currently contains:
 
 ## Role Of This Repo
 
-This repo is now best treated as the SchoolPrint AI umbrella repo for the broader SchoolPulse system.
+This repo is now best treated as the SchoolPulse AI umbrella repo for the broader SchoolPulse system.
 
 The current README summarizes the water, food, energy, and dashboard pieces. The Aqualert AI / LeakListener module remains the most developed concrete module. The next likely development work is to add:
 

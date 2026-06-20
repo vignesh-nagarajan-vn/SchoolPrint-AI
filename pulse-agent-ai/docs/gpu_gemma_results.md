@@ -23,7 +23,7 @@ Generated: 2026-06-17T19:34:03.254764+00:00
 
 Direct chat answer:
 
-> SchoolPrint AI should automatically schedule the powering down of lights and HVAC systems in unoccupied areas of the gymnasium and locker rooms immediately following the volleyball game.
+> SchoolPulse AI should automatically schedule the powering down of lights and HVAC systems in unoccupied areas of the gymnasium and locker rooms immediately following the volleyball game.
 
 ## Pulse Agent With Gemma 4
 

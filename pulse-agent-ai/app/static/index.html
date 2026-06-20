@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SchoolPrint Pulse</title>
+    <title>SchoolPulse</title>
     <link rel="stylesheet" href="/static/styles.css" />
   </head>
   <body>
     <main class="app-shell">
-      <aside class="sidebar" aria-label="SchoolPrint modules">
+      <aside class="sidebar" aria-label="SchoolPulse AI modules">
         <div class="brand">
           <span class="brand-mark" aria-hidden="true">SP</span>
           <div>
-            <strong>SchoolPrint</strong>
+            <strong>SchoolPulse AI</strong>
             <span>Pulse Agent</span>
           </div>
         </div>
@@ -488,7 +488,7 @@
           ? exchange.citations.map((citation) => `- ${citationText(citation)}`).join("\n")
           : "No citations returned.";
         return [
-          "SchoolPrint Pulse Agent Brief",
+          "SchoolPulse Agent Brief",
           "",
           `Model mode: ${exchange.usedLlm ? "Gemma LLM response" : "deterministic fallback response"}`,
           `Language: ${languageLabels[exchange.language] || exchange.language || "English"}`,

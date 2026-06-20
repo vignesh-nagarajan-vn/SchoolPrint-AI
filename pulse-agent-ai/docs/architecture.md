@@ -1,6 +1,6 @@
 # Pulse Agent AI Architecture
 
-Pulse Agent AI is the backend intelligence layer for SchoolPrint AI.
+Pulse Agent AI is the backend intelligence layer for SchoolPulse AI.
 
 ```text
 Project docs + challenge brief + email notes + ParentSquare evidence

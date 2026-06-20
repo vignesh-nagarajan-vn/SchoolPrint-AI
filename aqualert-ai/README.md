@@ -1,5 +1,5 @@
 ## Summary
-Aqualert AI is an edge-AI leak detector designed to flag running or leaking toilets in school bathrooms before significant water waste occurs. It is a component of **SchoolPrint**, which is a suite of edge AI tools designed to help reduce a school's environmental footprint. This directory contains the source code, server, simulation scripts, and tests for the Aqualert AI detection pipeline.
+Aqualert AI is an edge-AI leak detector designed to flag running or leaking toilets in school bathrooms before significant water waste occurs. It is a component of **SchoolPulse AI**, which is a suite of edge AI tools designed to help reduce a school's environmental footprint. This directory contains the source code, server, simulation scripts, and tests for the Aqualert AI detection pipeline.
 
 ### Problem
 ***[A single running toilet can waste up to 200 gallons of water per day](https://www.epa.gov/watersense/fix-a-leak-week)*** — silently, invisibly, and often for weeks before anyone notices. In a school with dozens of bathrooms, a worn flapper or fill valve that won't fully seat can drain tens of thousands of gallons a year. The problem is that:

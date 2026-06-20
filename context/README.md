@@ -1,13 +1,13 @@
 # Project Context
 
-This repo is for SchoolPrint AI, the umbrella project for the broader SchoolPulse hackathon concept.
+This repo is for SchoolPulse AI, the umbrella project for the broader SchoolPulse hackathon concept.
 
 ## Current Direction
 
 - Hackathon: USAII Global AI Hackathon 2026.
 - Track: High School, Challenge 2, Direction B: My School's Hidden Footprint.
 - Core idea: a suite of edge AI tools that reveal hidden school resource waste across water, food, and energy, tied together by a dashboard.
-- Product name in the current README: SchoolPrint AI.
+- Product name in the current README: SchoolPulse AI.
 - Product name from the ideation doc: SchoolPulse.
 - Current repo scope: the full school hidden-footprint system, with Aqualert AI as the most developed water module.
 
@@ -15,7 +15,7 @@ This repo is for SchoolPrint AI, the umbrella project for the broader SchoolPuls
 
 Challenge 2 asks for an AI-powered MVP that helps a school understand environmental impact and take practical, measurable action. Direction B specifically asks teams to make hidden school footprint patterns visible, show how specific behaviors affect outcomes, and help users prioritize high-impact actions.
 
-SchoolPrint AI fits because it turns hidden water, food, and energy waste into local, measurable alerts: where the problem is, why the AI thinks it matters, estimated impact, confidence, and what a human should check next.
+SchoolPulse AI fits because it turns hidden water, food, and energy waste into local, measurable alerts: where the problem is, why the AI thinks it matters, estimated impact, confidence, and what a human should check next.
 
 ## System Concept
 
