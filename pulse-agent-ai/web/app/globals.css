@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Black & white. White background, near-black ink, pure-black accents.
+       Red (destructive) is reserved exclusively for critical row highlights. */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 93%;
+    --accent-foreground: 0 0% 7%;
+
+    --destructive: 0 80% 47%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 84%;
+    --ring: 0 0% 0%;
+
+    --radius: 0.625rem;
+
+    /* Type system — wired to Tailwind's fontFamily.{sans,mono,display}. */
+    --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "Courier New", monospace;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    /* Faint engineering-paper grid: depth without introducing color. */
+    background-image:
+      linear-gradient(to right, hsl(0 0% 0% / 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(0 0% 0% / 0.03) 1px, transparent 1px);
+    background-size: 46px 46px;
+  }
+}
+
+@layer utilities {
+  /* Tabular numerals so columns of numbers align in the data tables. */
+  .nums {
+    font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+  .stagger > * {
+    animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .stagger > *:nth-child(1) { animation-delay: 0.02s; }
+  .stagger > *:nth-child(2) { animation-delay: 0.06s; }
+  .stagger > *:nth-child(3) { animation-delay: 0.1s; }
+  .stagger > *:nth-child(4) { animation-delay: 0.14s; }
+  .stagger > *:nth-child(5) { animation-delay: 0.18s; }
+  .stagger > *:nth-child(6) { animation-delay: 0.22s; }
+}

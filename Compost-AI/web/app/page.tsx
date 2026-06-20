@@ -100,6 +100,22 @@ export default function Home() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ command: (data.physical_bin as string).toUpperCase() }),
       }).catch(() => {/* best-effort */});
+
+      // Best-effort: surface this sort on the SchoolPrint Pulse dashboard's live
+      // Food Consumption feed. No-op unless NEXT_PUBLIC_PULSE_API_BASE is set.
+      const pulseBase = process.env.NEXT_PUBLIC_PULSE_API_BASE;
+      if (pulseBase) {
+        fetch(`${pulseBase.replace(/\/$/, "")}/api/waste/live`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            item: data.item_label || data.item,
+            bin: data.pathway,
+            confidence: data.confidence,
+            location: "Compost AI smart bin",
+          }),
+        }).catch(() => {/* best-effort; never block the kiosk */});
+      }
     } catch (err) {
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong");
       setPhase("error");

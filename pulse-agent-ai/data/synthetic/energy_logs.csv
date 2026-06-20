@@ -199,3 +199,4 @@ ID,Timestamp,Zone,Hour,Weekday,Outdoor Temperature (°F),Expected Occupancy,Expe
 198,2026-03-02T04:00:00,B-Wing Bathrooms,4,0,79.4,0,3.2,3.64,0
 199,2026-03-02T04:00:00,Cafeteria,4,0,79.4,0,10.8,11.5,0
 200,2026-03-02T04:00:00,Gym,4,0,79.4,0,11.5,10.41,0
+201,2026-06-20T19:00:00,Auditorium,19,5,88.2,1,14.20,148.60,1

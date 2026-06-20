@@ -42,6 +42,21 @@ class VoiceSpeakRequest(BaseModel):
     voice_id: str | None = Field(default=None, max_length=80)
 
 
+class WasteSortReading(BaseModel):
+    """A single item the Compost AI smart bin just sorted (pushed live to the
+    Food Consumption dashboard)."""
+
+    device_id: str = Field(default="compost-ai", min_length=1, max_length=80)
+    location: str = Field(default="Compost AI smart bin", min_length=1, max_length=120)
+    recorded_at: datetime | None = None
+    item: str = Field(..., min_length=1, max_length=120)
+    bin: str = Field(..., min_length=1, max_length=40)
+    # Accepts either a 0–1 model probability or a 0–100 percentage; the service
+    # normalizes to a percentage for display.
+    confidence: float = Field(..., ge=0, le=100)
+    reading_source: str = Field(default="compost-ai-web", min_length=2, max_length=40)
+
+
 class WaterSensorReading(BaseModel):
     device_id: str = Field(..., min_length=1, max_length=80)
     location: str = Field(default="Hackathon tank demo", min_length=1, max_length=120)

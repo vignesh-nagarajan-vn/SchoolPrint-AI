@@ -1,0 +1,33 @@
+
+> pulse-agent-web@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/8) ...
+   Generating static pages (2/8) 
+   Generating static pages (4/8) 
+   Generating static pages (6/8) 
+ ✓ Generating static pages (8/8)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    5.42 kB         136 kB
+├ ○ /_not-found                          873 B          88.1 kB
+├ ○ /energy                              2.16 kB         106 kB
+├ ○ /events                              3.77 kB         134 kB
+├ ○ /food                                2.26 kB         106 kB
+└ ○ /water                               3.45 kB         107 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-8be2d4df1bd3e38b.js       31.7 kB
+  ├ chunks/fd9d1056-bf53925213298bdd.js  53.6 kB
+  └ other shared chunks (total)          1.9 kB
+
+
+○  (Static)  prerendered as static content
+

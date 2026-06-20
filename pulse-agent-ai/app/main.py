@@ -12,8 +12,9 @@ from .analytics import AnalyticsService
 from .config import ALLOWED_ORIGINS, DATABASE_PATH, ELEVENLABS_API_KEY, LLM_BASE_URL, LLM_MODEL, PROJECT_ROOT
 from .database import ensure_database
 from .rag import RagRetriever
-from .schemas import AgentQuery, RagSearchQuery, VoiceSpeakRequest, WaterSensorReading
+from .schemas import AgentQuery, RagSearchQuery, VoiceSpeakRequest, WasteSortReading, WaterSensorReading
 from .voice import ElevenLabsVoiceService
+from .waste_live import WasteLiveService
 from .water_live import WaterLiveService
 
 
@@ -38,12 +39,14 @@ agent = PulseAgent()
 rag = RagRetriever()
 voice = ElevenLabsVoiceService()
 water_live = WaterLiveService(DATABASE_PATH)
+waste_live = WasteLiveService(DATABASE_PATH)
 
 
 @app.on_event("startup")
 def startup() -> None:
     ensure_database()
     water_live.ensure_table()
+    waste_live.ensure_table()
 
 
 @app.get("/")
@@ -93,6 +96,16 @@ def ingest_water_live(payload: WaterSensorReading) -> dict:
 @app.get("/api/waste")
 def waste() -> dict:
     return analytics.waste_summary()
+
+
+@app.get("/api/waste/live")
+def waste_live_feed(limit: int = Query(default=20, ge=1, le=100)) -> dict:
+    return {"rows": waste_live.recent_readings(limit)}
+
+
+@app.post("/api/waste/live")
+def ingest_waste_live(payload: WasteSortReading) -> dict:
+    return waste_live.ingest(payload)
 
 
 @app.get("/api/events")
